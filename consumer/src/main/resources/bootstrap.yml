@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      discovery:
+           enabled: true
+           service-id: CONFIG  # 配置中心的服务名（通过服务名发现服务）
+      #uri: http://localhost:5555  # 服务启动后，去找5555服务（通过地址发现服务，二选一）
+      name: consumer  # 从github上读取的配置文件名称，不要加 .yml后缀
+      label: master # master分支
+      profile: dev  # dev配置
+
