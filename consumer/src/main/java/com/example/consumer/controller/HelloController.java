@@ -4,9 +4,9 @@ import com.example.consumer.FeignClient.helloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 @RestController
+@RequestMapping("/api-consumer")
 public class HelloController {
    /* @Autowired
     private RestTemplate resttemplate;*/

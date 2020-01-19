@@ -1,10 +1,10 @@
-package com.example.consumer1;
+package com.example.cloudzuul;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Consumer1ApplicationTests {
+class CloudZuulApplicationTests {
 
     @Test
     void contextLoads() {
