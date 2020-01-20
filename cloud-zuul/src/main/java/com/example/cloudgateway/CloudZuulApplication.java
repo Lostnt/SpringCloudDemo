@@ -1,4 +1,4 @@
-package com.example.cloudzuul;
+package com.example.cloudgateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

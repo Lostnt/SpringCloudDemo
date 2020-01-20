@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(value = "provider",fallback  = helloHystrics.class)
 @Component
 public interface helloService {
-    @RequestMapping("/sayHello")
+    @RequestMapping("/sayHello?id=1")
     String sayHello() ;
 }
