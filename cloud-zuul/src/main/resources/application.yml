@@ -5,8 +5,20 @@ spring:
     name: cloudgateway
   cloud:
     gateway:
+      discovery:
+        locator:
+        #为true,自动创建路由,路由访问方式：http://Gateway_HOST:Gateway_PORT/大写的serviceId/**，其中微服务应用名默认大写访问
+          enabled: true
       routes:
       - id: consumer-service
-        uri: lb://consumer
+        uri: lb://consumer  #服务名
         predicates:
-        - Path=/api-consumer/**
+        - Path=/api-consumer/** #请求路径匹配规则
+        filters:
+        - name: Hystrix
+          args:
+            name: fallbackcmd
+            fallbackUri: forward:/helloHystrics
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

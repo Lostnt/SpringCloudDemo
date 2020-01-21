@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CloudZuulApplication {
+public class CloudGatewaylApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CloudZuulApplication.class, args);
+        SpringApplication.run(CloudGatewaylApplication.class, args);
     }
 
 }
