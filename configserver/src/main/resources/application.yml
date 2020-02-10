@@ -8,12 +8,8 @@ spring:
           uri: https://github.com/Lostnt/config-repository.git  # 远程git仓库的地址
           username: Lostnt  # 相应的账户名
           password: zb112113  # 密码
-          basedir: D:\IntelliJ IDEA 2018.1.8\workplace\springcloud-demo\config-repository  # 指定本地git仓库的路径
+          basedir: E:\zhang\idea-2019.3.2\SpringCloudDemo\config-repository  # 指定本地git仓库的路径  D:\IntelliJ IDEA 2018.1.8\workplace\springcloud-demo\config-repository
           search-paths: /**  # 指定搜索根路径下的所有目录，若有多个路径使用逗号隔开
-  kafka:
-    bootstrap-servers: localhost:9092   #配置 kafka 服务器的地址和端口
-    consumer:
-      group-id: SpringCloud-bus
 eureka:
   client:
     service-url:
